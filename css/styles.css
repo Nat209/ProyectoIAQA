@@ -74,7 +74,7 @@ header nav{
     padding-bottom: 25px;
 }
 
-header a{
+#nave{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
@@ -110,11 +110,13 @@ header a:hover{
 #hero button{
     font-size: 1.75em;
 }
+
 /*Banner principal*/
 #somos-desayunos .container{
     text-align: center;
     padding: 80px 12px;
 }
+
 
 /*Desayunos versión mobil*/
 #desayunos{
@@ -172,6 +174,7 @@ header a:hover{
     ,url("../assets/img/p.webp");
 
 }
+
 
 /*Detalles version mobil*/
 #detalles{
@@ -364,6 +367,7 @@ footer .container{
     #somos-desayunos h2{
         margin-top: 0px;
     }
+    
 /*Banner principal*/
     #somos-desayunos .img-container{
         background-image: url("../assets/img/clientes.jpeg");
@@ -478,8 +482,9 @@ footer .container{
 
     }
 
+
 /*Articulos personalizados versión escritorio*/
-#articulos .opciones{
+#articulos .art{
     display: flex;
     justify-content: center;
 }
@@ -529,8 +534,8 @@ footer .container{
         rgba(0,0,0,0.5)
     )
     ,url("../assets/img/art3.jpg")
-
 }
+
 
 /*Seccion contactanos*/
 #contactanos{
@@ -566,6 +571,15 @@ footer .container{
     justify-content: center;
     background-color: red;
 }
+
+.red5{
+    justify-content: center;
+    text-align: center;    
+    justify-content: center;
+    background-color: purple;
+}
+
+
 /*Final version escritorio*/
     #final h2{
         font-size: 5em;
