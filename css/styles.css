@@ -5,6 +5,10 @@
 html{
     scroll-behavior: smooth;
 }
+#viewDiv {
+    height: 40%;
+    width: 40%;
+  }
 
 body{
     font-family: 'Roboto', sans-serif;

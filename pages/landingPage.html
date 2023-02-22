@@ -19,19 +19,18 @@
             </div>
 
             <div>
-                <a href="../index.html">Quienes Somos</a>
-
-                <a href="../index.html/#desayunos">Desayunos Sorpresa</a>
-                <a href="../index.html/">Detalles Sorpresa</a>
-                <a href="../index.html/">Articulos Personalizados</a>
-                <a href="../index.html/">Contáctanos</a>
+                <a id="nave" href="../index.html">Quienes Somos</a>
+                <a id="nave" href="../index.html/">Desayunos Sorpresa</a>
+                <a id="nave" href="../index.html/">Detalles Sorpresa</a>
+                <a id="nave" href="../index.html/">Articulos Personalizados</a>
+                <a id="nave" href="../index.html/">Contáctanos</a>
             </div>
         </nav>
     </header>
     <main>
         <section id="InfoLanding">
             <div class="container">
-                <div class="img-container"></div>
+                
                 <div class="texto">
 
                     <h2>Desayunos y Detalles <span class="color-acento">Para las mujeres más bellas</span></h2>
@@ -41,7 +40,7 @@
 
                     <p> Registrate y recibe el catálogo de detalles para el día de la mujer.</p>
                 </div>
-            </div>
+           
         </section>
 
         <section id="formulario">
@@ -49,19 +48,20 @@
                 <form action="" class="form" class="form">
                     <h2>Registrate</h2>
                     <label for="nombre" class="label">Nombre</label>
-                    <input type="text" placeholder="Nombre">
-                    <label for="correo class="label"">Correo</label>
-                    <input type="email" placeholder="Correo">
+                    <input type="text" id="nombres" placeholder="Nombre" >
+                    <label for="correo" class="label">Correo</label>
+                    <input type="email" id="mail" placeholder="Correo">
                     <label for="tel" class="label">Télefono</label>
-                    <input type="number" placeholder="telefono">
-                    <button type="submit">Enviar
+                    <input type="number" id="telefono" placeholder="telefono">
+                    <input type="checkbox" id="politica" class="politica"> <label for="politica">Aceptar politicas de privacidad</label>
+                    <button type="submit" id="btnSend">Enviar
                     </button>
                 </form>
             </section>
 
         </section>
     </main>
-
+<script src="../scripts/formulario.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+}
+#InfoLanding{
+    
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 55%;
+}
+
+#InfoLanding h1{
+    color: white;
+}
+
+#InfoLanding button{
+    font-size: 1.75em;
+}
+
+#formulario{
+    display: inline-block;
+    width: 20%;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 5%;
+    text-align: center;
+    margin: 10%;
+}
+#formulario>label,input,button{
+    display: block;
+    padding: 2%;
+}
+label{
+    padding: 2%;
+    text-align: left;
+}
+
+#InfoLanding .container{
+    text-align: center;
+    padding: 80px 12px;
+    overflow: scroll;
+    margin-top: 10%;
+    width: 50%;
+    height: 60%;
+}
+
+
+/*Desayunos versión mobil*/
+#InfoLanding{
+   
+    color: rgb(136, 18, 18);
+    text-align: center;
+    
+}
+
+#InfoLanding .container{
+    padding: 80px 12px;
+}
+
+#InfoLanding h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#InfoLanding p{
+    display: none;
+    color: black;
+}
