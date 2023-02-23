@@ -552,37 +552,28 @@ footer .container{
     display: block;
     margin-bottom: 30px;
 }
-.red1{
-    justify-content: center;
-    text-align: center;    
-    justify-content: center;
-    background-color: blue;
-
+.fa-facebook{
+    color: blue;
+    font-size: 40px;
+}   
 }
-.red2{
-    justify-content: center;
-    text-align: center;    
-    justify-content: center;
-    background-color: forestgreen;
+.fa-whatsapp{
+    color: green;
+    font-size: 40px;
+}   
+    
+.fa-tiktok{
+    color: black;
+    font-size: 40px;
 }
-.red3{
-    justify-content: center;
-    text-align: center;    
-    justify-content: center;
-    background-color: black;
-}
-.red4{
-    justify-content: center;
-    text-align: center;    
-    justify-content: center;
-    background-color: red;
+.fa-youtube{
+    color: red;
+    font-size: 40px;
 }
 
-.red5{
-    justify-content: center;
-    text-align: center;    
-    justify-content: center;
-    background-color: purple;
+.fa-instagram{
+    color: #E1306C;
+    font-size: 40px;
 }
 
 
