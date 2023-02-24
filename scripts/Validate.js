@@ -1,18 +1,17 @@
-'use strict';
 
 class Validacion{
 
-    /*Constructor: da valores iniciales a los atributos de un onbjeto*/ 
+    /*Constructor: da valores iniciales a los atributos de un objeto*/ 
     constructor(){};
 
-    inputValid(input,regeX){
+    inputValid(input,regex){
         return input.match(regex) ? true: false;
     };
     
 
     validNames(cad){
-        const nameRX =/^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})$/g;
-        const response = this.input(cad,nombresRX);
+        const nombresRX = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})$/g;
+        const response = this.inputValid(cad,nombresRX);
         return response;        
     }
     validMail(cad){
@@ -20,12 +19,12 @@ class Validacion{
         const response = this.inputValid(cad,mailRX);
         return response;
     }
-    validTelefono(cad){
+    validPhone(cad){
         const telefonoRX = /^\(?(\ d{3}) \)? [-] ? (\ d {3}) [-]? (\ d {4}) $ /g;
-        const response = this.inputValid(cad,mailRX);
+        const response = this.inputValid(cad,telefonoRX);
         return response;
     }
-    validarForm =(Object)=>{
+    validarForm =(object)=>{
         const valores = Object.values(object);
         let resp = valores.findIndex( e => e === false);
         return resp;

@@ -1,77 +1,385 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-main{
-    display: flex;
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
 }
-#InfoLanding{
-    
-    
+
+#InfoLanding {
+
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    width: 55%;
+    width: 100%;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../assets/img/cerezos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-#InfoLanding h1{
-    color: white;
-}
-
-#InfoLanding button{
-    font-size: 1.75em;
-}
-
-#formulario{
-    display: inline-block;
-    width: 20%;
+.containerLeyenda {
+    padding: 10%;
+    display: flex;
+    float: left;
     align-items: center;
-    border: 1px solid #000;
-    padding: 5%;
+    justify-content: center;
     text-align: center;
-    margin: 10%;
+    flex-direction: column;
+    height: 90vh;
+    width: 60%;
+
+
 }
-#formulario>label,input,button{
+
+.containerForm {
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 40%;
+}
+
+.containerForm>label,
+input,
+button {
     display: block;
     padding: 2%;
-}
-label{
-    padding: 2%;
-    text-align: left;
+    margin: 2%;
+    color: aliceblue;
+
 }
 
-#InfoLanding .container{
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+.button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #3E89EB;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #3E89EB;
+    cursor: pointer;
+
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: #EB17A4;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+
+}
+
+.marca .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #EB17A4;
+    font-size: 1.6em;
+
+}
+
+.marca>img {
+    width: 50px;
+    height: 50px;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 80px 12px;
-    overflow: scroll;
-    margin-top: 10%;
-    width: 50%;
-    height: 60%;
+    padding-bottom: 25px;
 }
 
-
-/*Desayunos versión mobil*/
-#InfoLanding{
-   
-    color: rgb(136, 18, 18);
-    text-align: center;
-    
-}
-
-#InfoLanding .container{
-    padding: 80px 12px;
-}
-
-#InfoLanding h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-
-#InfoLanding p{
-    display: none;
+#nave {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
     color: black;
+}
+
+header a:hover {
+    text-shadow: 1px 1px 2px #eb17a44a;
+}
+
+
+
+
+@media (min-width: 850px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+    #containerLeyenda  {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #containerLeyenda  {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #containerLeyenda h2 {
+        margin-top: 0px;
+    }
+
+
+
+
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 2.7em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        font-size: 1.25em;
+    }
+
+    .button {
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: #3E89EB;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: #3E89EB;
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .color-acento {
+        color: #EB17A4;
+    }
+
+    header {
+        background-color: rgb(245, 245, 245);
+
+    }
+
+    .marca .logo {
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color: #EB17A4;
+        font-size: 1.6em;
+
+    }
+
+    .marca>img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    #nave {
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+    header a:hover {
+        color: #3E89EB;
+    }
+
+
+
+    /*Final mobil*/
+    #final {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(30, 30, 30);
+        color: white;
+        height: 80vh;
+    }
+
+    #final h2 {
+        font-size: 9vw;
+    }
+
+    #final button {
+        font-size: 5vw;
+    }
+
+    footer {
+        background-color: rgb(230, 230, 230);
+    }
+
+    footer p {
+        margin: 0;
+        padding: 12px;
+        color: rgb(100, 100, 100);
+    }
+
+    footer .container {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    @media (min-width: 850px) {
+        header {
+            position: fixed;
+            width: 100%;
+        }
+
+        header .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header nav {
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+
+        #somos-desayunos .container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #somos-desayunos .texto {
+            width: 50%;
+            max-width: 600px;
+            text-align: initial;
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #somos-desayunos h2 {
+            margin-top: 0px;
+        }
+
+        /*Banner principal*/
+        #somos-desayunos .img-container {
+            background-image: url("../assets/img/clientes.jpeg");
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            width: 700px;
+        }
+    }
 }

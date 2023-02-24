@@ -1,14 +1,613 @@
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
-#viewDiv {
-    height: 40%;
-    width: 40%;
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+.button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #3E89EB;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #3E89EB;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:#EB17A4; }
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+.marca .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #EB17A4;
+    font-size: 1.6em;
+    
+}
+
+.marca > img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#nave{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;  
+}
+
+header a:hover{
+    color: #3E89EB;
+    text-shadow: 1px 1px 2px #eb17a44a;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/MicrosoftTeams-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+/*Banner principal*/
+#somos-desayunos .container{
+    text-align: center;
+    padding: 80px 12px;
+}
+
+
+/*****************************Desayunos versión mobil****************************************************************/
+#desayunos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#desayunos .container{
+    padding: 80px 12px;
+}
+
+#desayunos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#desayunos p{
+    display: none;
+}
+
+#desayunos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/frut.jpg")
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/flores.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/desayun.jpg");
+
+}
+
+
+/*Detalles version mobil*/
+#detalles{
+    background-color: white;
+    color: rgb(30,30,30);
+    text-align: center;
+}
+
+#detalles .container{
+    padding: 80px 12px;
+}
+
+#detalles h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#detalles p{
+    display: none;
+}
+
+#detalles .carta1{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta1:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/detalle1.jpg")
+
+}
+
+.carta1:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/niños.jpg");
+}
+
+.carta1:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/reg2.jfif");
+
+}
+
+/*Articulos personalizados versión mobil*/
+
+#articulos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#articulos .container{
+    padding: 80px 12px;
+}
+
+#articulos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#articulos p{
+    display: none;
+}
+
+#articulos .carta2{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta2:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/ropa.jpg")
+
+}
+
+.carta2:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/art1.jpg");
+}
+
+.carta2:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/Fondo\ de\ globos\ coloridos\ _\ Vector\ Gratis.jfif");
+
+}
+
+/*Final mobil*/
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-desayunos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-desayunos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-desayunos h2{
+        margin-top: 0px;
+    }
+    
+/*Banner principal*/
+    #somos-desayunos .img-container{
+        background-image: url("../assets/img/clientes.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 700px; 
+    }
+/*Desayunos versión escritorio*/
+    #desayunos .opciones{
+        display: flex;
+        justify-content: center;
+    }
+
+    #desayunos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #desayunos h2{
+        font-size: 4em;
+    }
+
+    #desayunos h3{
+        margin-top: 0;
+    }
+
+    #desayunos .carta{
+        padding: 50px;
+        background-size: 200% 250px;
+
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../assets/img/frut.jpg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../assets/img/flores.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5)
+        )
+        ,url("../assets/img/desayun.jpg")
+
+    }
+
+/*Detalles versión escritorio*/
+    #detalles .lista{
+        display: flex;
+        justify-content: center;
+    }
+
+    #detalles p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #detalles h2{
+        font-size: 4em;
+    }
+
+    #detalles h3{
+        margin-top: 0;
+    }
+
+    #detalles .carta1{
+        padding: 50px;
+        background-size: 200% 250px;
+
+    }
+
+    .carta1:first-child{
+        background-size: cover;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../assets/img/detalle1.jpg");
+
+    }
+
+    .carta1:nth-child(2){
+        background-size: cover;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../assets/img/niños.jpg");
+    }
+
+    .carta1:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5)
+        )
+        ,url("../assets/img/reg2.jfif")
+
+    }
+
+
+/*Articulos personalizados versión escritorio*/
+#articulos .art{
+    display: flex;
+    justify-content: center;
+}
+
+#articulos p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#articulos h2{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#articulos h3{
+    margin-top: 0;
+}
+
+#articulos .art{
+    padding: 50px;
+    background-size: 200% 250px;
+
+}
+
+.carta2:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/ropa.jpg");
+
+}
+
+.carta2:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/art1.jpg");
+}
+
+.carta2:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/img/Fondo\ de\ globos\ coloridos\ _\ Vector\ Gratis.jfif")
+}
+
+
+/*Seccion contactanos*/
+#contactanos{
+    justify-content: center;
+    text-align: center;    
+    padding: 50px;
+    background-size: 50% 20px;
+    display: block;
+    margin-bottom: 30px;
+}
+.fa-facebook{
+    color: blue;
+    font-size: 40px;
+}   
+}
+.fa-whatsapp{
+    color: green;
+    font-size: 40px;
+}   
+    
+.fa-tiktok{
+    color: black;
+    font-size: 40px;
+}
+.fa-youtube{
+    color: red;
+    font-size: 40px;
+}
+
+.fa-instagram{
+    color: #E1306C;
+    font-size: 40px;
+}
+
+
+/*Final version escritorio*/
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+
+@media (min-width: 1200px) {
+    #detalles{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, #map, #viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
   }
+
+#viewDiv{
+ height: 50%;
+ width: 50%;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -595,4 +1194,39 @@ footer .container{
     #detalles{
         background-position-x: calc(100vw - 800px);
     }
+}
+
+html, body, #contactanos, #map, #viewDiv {
+   
+    height: 100%;
+    width: 100%;
+  }
+  #contactanos{
+    height: 80%;
+   
+   
+  }
+#map{
+    height: 60%;
+    width:60%;
+    float: left;
+}
+#viewDiv{
+    height: 100%;
+    width:100%;
+    margin: 5%;
+}
+
+
+.media{
+    width: 30%;
+    display: inline-block;
+    overflow: hidden;
+    
+    
+}
+.media>a{
+    display: block;
+    margin: 5%;
+
 }
