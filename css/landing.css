@@ -9,10 +9,15 @@ body {
     margin: 0;
 
 }
+.detalles{
+    text-align: center;
+}
+.detalles>h2{
+    margin: 3%;
+}
 
 #InfoLanding {
-
-    align-items: center;
+     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
@@ -25,6 +30,7 @@ body {
     background-size: cover;
     background-position: center center;
     color: #fff;
+    
 }
 .containerLeyenda {
     padding: 10%;
@@ -37,9 +43,11 @@ body {
     height: 90vh;
     width: 60%;
 
-
 }
-
+.containerLeyenda  strong{
+    color: #fff;
+    margin: 2%;
+}
 .containerForm {
     position: relative;
     top: 5%;
@@ -61,6 +69,8 @@ body {
     border: 4px solid #418dab;
     padding: 25px 10px;
     text-align: center;
+    
+    
 }
 .form >input,label,button{
     display: inline-block;
@@ -73,10 +83,15 @@ body {
     border: none;
     border-bottom: 1px solid #57aaf2;
     outline: none;
+    background: transparent;
 }
 .form> label{
     text-align: left;
     padding: 5px;
+    color: #fff;
+}
+::placeholder{
+    color: #fff;
 }
 
 h1 {
@@ -121,17 +136,13 @@ li {
 
 }
 
-.container {
-    max-width: 1400px;
-    margin: auto;
-}
-
 .color-acento {
     color: #EB17A4;
 }
 
 header {
     background-color: rgb(245, 245, 245);
+    z-index: 3;
 
 }
 
@@ -174,7 +185,14 @@ header a:hover {
     text-shadow: 1px 1px 2px #eb17a44a;
 }
 
-
+footer{
+    text-align: center;
+    padding: 2%;
+}
+footer>a{
+    width: 2%;
+    padding: 1%;
+}
 
 
 @media (min-width: 850px) {
@@ -212,15 +230,6 @@ header a:hover {
 
     #containerLeyenda h2 {
         margin-top: 0px;
-    }
-
-
-
-
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
     }
 
     h1 {
@@ -317,7 +326,6 @@ header a:hover {
     }
 
 
-
     /*Final mobil*/
     #final {
         display: flex;
@@ -370,34 +378,6 @@ header a:hover {
             flex-direction: row;
             padding-bottom: 0;
             padding-right: 20px;
-        }
-
-        #somos-desayunos .container {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        #somos-desayunos .texto {
-            width: 50%;
-            max-width: 600px;
-            text-align: initial;
-            padding-left: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        #somos-desayunos h2 {
-            margin-top: 0px;
-        }
-
-        /*Banner principal*/
-        #somos-desayunos .img-container {
-            background-image: url("../assets/img/clientes.jpeg");
-            background-size: cover;
-            background-position: center center;
-            height: 500px;
-            width: 700px;
         }
     }
 }
