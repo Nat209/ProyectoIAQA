@@ -1,12 +1,11 @@
-
-import { Validacion } from "./validacion.js";
+import { Validacion } from "./Validate.js";
 //Instanciar objeto
 const validacion = new Validacion();
 const formulario = document.getElementById("form")
 const btn = document.getElementById("btnSend");
 //Objeto de validacion
 const formValid ={
-    nombre: false,
+    nombres: false,
     mail: false,
     telefono: false,
     politica: false
@@ -18,34 +17,34 @@ formulario.addEventListener("change", (e)=>{
     const miValue = e.target.value;
     const miClass = e.target.classList;
     const validClass = () =>{
-        miClass.addEventListener("is-valid");
-        miClass.remove("is-invalid");
-    };
-    const invalidClass = () =>{
         miClass.add("is-valid");
         miClass.remove("is-invalid");
     };
+    const invalidClass = () =>{
+        miClass.add("is-invalid");
+        miClass.remove("is-valid");
+    };
 
     switch(inputId){
-        case "names" :
-            formValid.name = validacion.validNames(miValue);
-            formValid.name ? validClass() : invalidClass();
-            console.log(object.values(formValid));
+        case "nombres" :
+            formValid.nombres = validacion.validNames(miValue);
+            formValid.nombres ? validClass() : invalidClass();
+            console.log(Object.values(formValid));
             break;
         case "mail" :
-            formValid.mail =validacion.validMail(mivalue);
+            formValid.mail =validacion.validMail(miValue);
             formValid.mail ? validClass() : invalidClass();
-            console.log(object.values(formValid));
+            console.log(Object.values(formValid));
             break;
         case "telefono":
-            formValid.telefono = validacion.validPhone();
+            formValid.telefono = validacion.validPhone(miValue);
             formValid.telefono ? validClass() : invalidClass();
-            console.log(object.values(formValid));
+            console.log(Object.values(formValid));
             break;
-        case"checkPolitica" :
+        case"politica" :
             if (e.target.checked) formValid.politica = true;
             else formValid.politica = false;
-            console.log(object.values(formValid));
+            console.log(Object.values(formValid));
             break;
         }
 })
