@@ -14,13 +14,15 @@ class Validacion{
         const response = this.inputValid(cad,nombresRX);
         return response;        
     }
-    validMail(cad){
+    validMail(cad) {
         const mailRX = /^([\w.]+[^#$%&\/()='"!?¡]\w*-*)([@])(\w)+(\.[a-z]{2,3})$/g;
-        const response = this.inputValid(cad,mailRX);
+        const response = this.inputValid(cad, mailRX)
         return response;
+
     }
+
     validPhone(cad){
-        const telefonoRX = /^\(?(\ d{3}) \)? [-] ? (\ d {3}) [-]? (\ d {4}) $ /g;
+        const telefonoRX = /^\(?(\ d{10}) \) $ /g;
         const response = this.inputValid(cad,telefonoRX);
         return response;
     }

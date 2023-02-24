@@ -47,15 +47,20 @@
 
                 <h2>Registrate</h2>
                 <label for="nombre" class="label">Nombre</label>
-                <input type="text" id="nombres" placeholder="Nombre">
+                <input class="input" type="text" id="nombres" placeholder="Nombre">
                 <label for="correo" class="label">Correo</label>
-                <input type="email" id="mail" placeholder="Correo">
+                <input class="input" type="email" id="mail" placeholder="Correo">
                 <label for="tel" class="label">Télefono</label>
-                <input type="number" id="telefono" placeholder="telefono">
-                <input type="checkbox" id="checkPolitica" class="checkPolitica"> <label for="politica" class="labelkPolitica">Aceptar politicas de
-                privacidad</label>
+                <input class="input" type="number" id="telefono" placeholder="telefono">
+                
+                <div class="checkdiv" >
+                    <input class="checkPolitica" type="checkbox" id="checkPolitica">
+                     <label class="labelPolitica" for="checkPolitica">Acepto todas las politicas</label>
+                    </div>
                 <button type="submit" id="btnSend" class="button">Enviar
                 </button>
+                
+               
             </form>
         </div>
 
