@@ -1,8 +1,19 @@
-require(["esri/Map", "esri/views/MapView", "esri/widgets/Directions", "esri/layers/RouteLayer"], function(
+require([
+  "esri/Map", 
+  "esri/views/MapView", 
+  "esri/widgets/Directions", 
+  "esri/layers/RouteLayer",
+  "esri/Graphic",
+  "esri/geometry/Point",
+  "esri/PopupTemplate",
+], function(
   Map,
   MapView,
   Directions,
-  RouteLayer
+  RouteLayer,
+  PopupTemplate,
+  Graphic, 
+  Point
 ) {
 
   // An authorization string used to access the basemap, geocoding and routing services
@@ -19,7 +30,7 @@ require(["esri/Map", "esri/views/MapView", "esri/widgets/Directions", "esri/laye
 
   const view = new MapView({
     zoom: 14,
-    center: [-118.24, 34.05],
+    center: [-74.11732356881502,4.7117303726211235],
     container: "viewDiv",
     map: map
   });
@@ -35,4 +46,5 @@ require(["esri/Map", "esri/views/MapView", "esri/widgets/Directions", "esri/laye
   view.ui.add(directionsWidget, {
     position: "top-right"
   });
+
 });
