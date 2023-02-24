@@ -194,6 +194,38 @@ footer>a{
     padding: 1%;
 }
 
+#checkPolitica {
+    appearance: none;
+    border: 2px solid #FF004E;
+}
+
+#checkPolitica:checked {
+    background-color: #FFD1DC;
+}
+
+#checkPolitica:focus {
+    border-color: #4b4949;
+}
+
+.checkPolitica {
+  
+    display: inline-block;
+}
+
+.labelkPolitica {
+    width: 70%;
+    display: inline-block;
+}
+
+
+.is-valid {
+    background-color: #FFD1DC !important;
+    border-bottom: 1px solid #FF004E !important;
+}
+
+.is-invalid {
+    border-bottom: 5px solid #f81818 !important;
+}
 
 @media (min-width: 850px) {
     header {

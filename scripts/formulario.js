@@ -1,7 +1,7 @@
 import { Validacion } from "./Validate.js";
 //Instanciar objeto
 const validacion = new Validacion();
-const formulario = document.getElementByIdgit("form");
+const formulario = document.getElementById("form");
 const btn = document.getElementById("btnSend");
 //Objeto de validacion
 const formValid ={
@@ -49,7 +49,8 @@ formulario.addEventListener( 'change', (e)=> {
 });
 //ENvio de formulario
 btn.addEventListener("click", (e => {
-    e.preventDefault();
+    e.preventDefault()
+    console.log("htrf")
     if (validacion.validarForm(formValid) === -1){
         alert("Enviando Formulario");
         console.log(document.getElementById('form'));
