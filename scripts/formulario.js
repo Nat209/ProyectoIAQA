@@ -1,7 +1,7 @@
 import { Validacion } from "./Validate.js";
 //Instanciar objeto
 const validacion = new Validacion();
-const formulario = document.getElementById("form")
+const formulario = document.getElementById("form");
 const btn = document.getElementById("btnSend");
 //Objeto de validacion
 const formValid ={
@@ -12,7 +12,7 @@ const formValid ={
 }
 //validacion
 formulario.addEventListener("change", (e)=>{
-    e.preventDefault();
+    e.preventDefault
     const inputId = e.target.id;
     const miValue = e.target.value;
     const miClass = e.target.classList;
