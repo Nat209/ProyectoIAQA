@@ -597,3 +597,37 @@ footer .container{
         background-position-x: calc(100vw - 800px);
     }
 }
+html, body, #contactanos, #map, #viewDiv {
+   
+    height: 100%;
+    width: 100%;
+  }
+  #contactanos{
+    height: 80%;
+   
+   
+  }
+#map{
+    height: 60%;
+    width:60%;
+    float: left;
+}
+#viewDiv{
+    height: 100%;
+    width:100%;
+    margin: 5%;
+}
+
+
+.media{
+    width: 30%;
+    display: inline-block;
+    overflow: hidden;
+    
+    
+}
+.media>a{
+    display: block;
+    margin: 5%;
+
+}
