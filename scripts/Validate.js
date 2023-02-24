@@ -22,7 +22,7 @@ class Validacion{
     }
 
     validPhone(cad){
-        const telefonoRX = /^\(?(\ d{10}) \) $ /g;
+        const telefonoRX = /^\d{10}$/g;
         const response = this.inputValid(cad,telefonoRX);
         return response;
     }
