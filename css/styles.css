@@ -81,6 +81,7 @@ header nav{
 
 header a:hover{
     color: #3E89EB;
+    text-shadow: 1px 1px 2px #eb17a44a;
 }
 
 #hero{
