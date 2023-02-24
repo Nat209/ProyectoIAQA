@@ -11,8 +11,7 @@ const formValid ={
     politica: false
 }
 //validacion
-formulario.addEventListener("change", (e)=>{
-    e.preventDefault();
+formulario.addEventListener( 'change', (e)=> {
     const inputId = e.target.id;
     const miValue = e.target.value;
     const miClass = e.target.classList;
@@ -47,7 +46,7 @@ formulario.addEventListener("change", (e)=>{
             console.log(Object.values(formValid));
             break;
         }
-})
+});
 //ENvio de formulario
 btn.addEventListener("click", (e => {
     e.preventDefault();
