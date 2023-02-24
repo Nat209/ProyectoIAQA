@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="../css/landing.css">
-    
+    <script src="https://kit.fontawesome.com/b72b1923bb.js" crossorigin="anonymous"></script>
+
     <title>IAQA Día de la Mujer</title>
 </head>
 
@@ -27,36 +29,147 @@
             </div>
         </nav>
     </header>
-   
-        <div id="InfoLanding">
-            <section class="containerLeyenda">
-                    <h2>Desayunos y Detalles <span class="color-acento">Para las mujeres más bellas</span></h2>
-                    <p>Para estas fechas especiales tenemos grandes promociones para reconocer a las
-                        mujeres que, con su lucha y esfuerzo a lo largo de estos años, han hecho posible
-                        que hoy vivamos en una sociedad más libre e igualitaria.</p>
 
-                   <p><strong>Registrate y recibe el catálogo de detalles para el día de la mujer.</strong> </p> 
-            </section>
+    <section id="InfoLanding">
+
+        <div class="containerLeyenda">
+            <h1>Desayunos y Detalles <span class="color-acento">Para las mujeres más bellas</span></h1>
+            <p>Para estas fechas especiales tenemos grandes promociones para reconocer a las
+                mujeres que, con su lucha y esfuerzo a lo largo de estos años, han hecho posible
+                que hoy vivamos en una sociedad más libre e igualitaria.</p>
+
+            <p><strong>Registrate y recibe el catálogo de detalles para el día de la mujer.</strong> </p>
+        </div>
 
 
             <section class="containerForm">
-                 <form id="form" class="form">
+                 <form action="" class="form" class="form">
 
-                    <h2>Registrate</h2>
-                    <label for="nombre" class="label">Nombre</label>
-                    <input type="text" id="nombres" placeholder="Nombre" >
-                    <label for="correo" class="label">Correo</label>
-                    <input type="email" id="mail" placeholder="Correo">
-                    <label for="tel" class="label">Télefono</label>
-                    <input type="number" id="telefono" placeholder="telefono">
-                    <label for="politica"></label><input type="checkbox" id="politica" class="politica">Aceptar politicas de privacidad </label>
-                    <button type="submit" id="btnSend" class="button">Enviar
-                    </button>
-                </form>
-            </section>
-
+                <h2>Registrate</h2>
+                <label for="nombre" class="label">Nombre</label>
+                <input type="text" id="nombres" placeholder="Nombre">
+                <label for="correo" class="label">Correo</label>
+                <input type="email" id="mail" placeholder="Correo">
+                <label for="tel" class="label">Télefono</label>
+                <input type="number" id="telefono" placeholder="telefono">
+                <label for="politica"></label><input type="checkbox" id="politica" class="politica">Aceptar politicas de
+                privacidad </label>
+                <button type="submit" id="btnSend" class="button">Enviar
+                </button>
+            </form>
         </div>
-        <script type="module" src="../scripts/formulario.js"></script>
+
+    </section>
+    <section class="detalles">
+        <h2>Detalles Especiales</h2>
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="../assets/img/card4.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+
+                            <div class="media-content">
+                                <p class="title is-4">Caja Sorpresa</p>
+
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Caja sorpresa con todo tipo de dulces además de una árticulo personalizado
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="../assets/img/card3.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+
+                            <div class="media-content">
+                                <p class="title is-4">Almohadas Personalizadas</p>
+
+                            </div>
+                        </div>
+
+                        <div class="content">
+                           Almohadas personalizadas con la frase e imagenes que elijas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="../assets/img/card2.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+
+                            <div class="media-content">
+                                <p class="title is-4">Deayuno saludble</p>
+
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Caja con desayuno, arreglo de flores y globo decorativo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="../assets/img/card1.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+
+                            <div class="media-content">
+                                <p class="title is-4">Sorpresa</p>
+
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Regalo sorpresa, empaques que contienen diferentes productos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+        <a target="_blank" href="https://www.facebook.com/desayunosydetallesiaqa?mibextid=ZbWKwL"><i
+                class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=0573134815979&text=Hola"><i
+                class="fa-brands fa-whatsapp"></i></a>
+        <a target="_blank" href="https://www.tiktok.com/@desayunosydetallesiaqa?_t=8a4FRXJIbiA&_r=1"><i
+                class="fa-brands fa-tiktok"></i></a>
+        <a target="_blank" href="https://youtube.com/@desayunosydetallesiaqa7522"><i
+                class="fa-brands fa-youtube"></i></a>
+        <a target="_blank" href="https://instagram.com/desayunos_y_detalles_iaqa?igshid=YmMyMTA2M2Y="><i
+                class="fa-brands fa-instagram"></i></a>
+        <p>&copy; Desayunos y detalles IAQA</p>
+
+    </footer>
+    <script type="module" src="../scripts/formulario.js"></script>
 </body>
 
 </html>
