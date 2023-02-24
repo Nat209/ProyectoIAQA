@@ -12,7 +12,7 @@ const formValid ={
 }
 //validacion
 formulario.addEventListener("change", (e)=>{
-    e.preventDefault
+    e.preventDefault();
     const inputId = e.target.id;
     const miValue = e.target.value;
     const miClass = e.target.classList;
@@ -53,7 +53,8 @@ btn.addEventListener("click", (e => {
     e.preventDefault();
     if (validacion.validarForm(formValid) === -1){
         alert("Enviando Formulario");
-        let datos = new FormData(document.getElementById('form'));
+        console.log(document.getElementById('form'));
+        let datos = new FormData(document.querySelector('#form'));
         console.log(datos);
     }
-}))
+}));
