@@ -12,7 +12,7 @@ const formValid ={
 }
 //validacion
 formulario.addEventListener("change", (e)=>{
-    e.preventDefault
+    e.preventDefault();
     const inputId = e.target.id;
     const miValue = e.target.value;
     const miClass = e.target.classList;
