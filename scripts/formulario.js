@@ -1,7 +1,7 @@
 import { Validacion } from "./Validate.js";
 //Instanciar objeto
 const validacion = new Validacion();
-const formulario = document.getElementById("form");
+const formulario = document.getElementByIdgit("form");
 const btn = document.getElementById("btnSend");
 //Objeto de validacion
 const formValid ={
