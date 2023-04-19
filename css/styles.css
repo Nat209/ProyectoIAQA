@@ -46,22 +46,23 @@ li{ font-size: 1.25em;}
 .color-acento{ color:#EB17A4; }
 
 header{
-    background-color: rgb(245,245,245);
-    
+    background-color: rgb(245,245,245);    
 }
 
 .marca .logo{
+    display: flex;
     margin: 0;
-    padding: 25px 30px;
+    padding: auto;
     font-weight: bold;
     color: #EB17A4;
-    font-size: 1.6em;
+    font-size: 20px;
     
 }
 
 .marca > img{
-    width: 50px;
-    height: 50px;
+    margin-top: 2%;
+    width: 100px;
+    height: 100px;
     
 }
 
@@ -76,10 +77,11 @@ header nav{
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
+    font-size: 18px;
 }
 
 #nave{
-    padding: 5px 12px;
+    padding: 8px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;  
@@ -101,7 +103,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../assets/img/MicrosoftTeams-image.png");
+    ,url("../assets/img/portada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -156,7 +158,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../assets/img/frut.jpg")
+    ,url("../assets/img/sabraDios.jpg")
 
 }
 
@@ -166,7 +168,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../assets/img/flores.jpg");
+    ,url("../assets/img/desayuno\ saludable.jpg");
 }
 
 .carta:nth-child(3){
@@ -175,15 +177,16 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../assets/img/desayun.jpg");
+    ,url("../assets/img/desayuno.jpg");
 
 }
 
 
 /*Detalles version mobil*/
+
 #detalles{
     background-color: white;
-    color: rgb(30,30,30);
+    color: white;
     text-align: center;
 }
 
@@ -194,6 +197,7 @@ header a:hover{
 #detalles h2{
     margin-top: 0;
     font-size: 3.2em;
+    color: black;
 }
 
 #detalles p{
@@ -214,7 +218,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../assets/img/detalle1.jpg")
+    ,url("../assets/img/detalles.jpg")
 
 }
 
@@ -224,7 +228,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../assets/img/niños.jpg");
+    ,url("../assets/img/detalle\ niños.jpg");
 }
 
 .carta1:nth-child(3){
@@ -233,7 +237,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../assets/img/reg2.jfif");
+    ,url("../assets/img/flores.jpg");
 
 }
 
@@ -282,7 +286,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../assets/img/art1.jpg");
+    ,url("../assets/img/Articulos.jpg");
 }
 
 .carta2:nth-child(3){
@@ -291,7 +295,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../assets/img/Fondo\ de\ globos\ coloridos\ _\ Vector\ Gratis.jfif");
+    ,url("../assets/img/nosexd.jpg");
 
 }
 
@@ -412,7 +416,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../assets/img/frut.jpg");
+        ,url("../assets/img/sabraDios.jpg");
 
     }
 
@@ -422,7 +426,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../assets/img/flores.jpg");
+        ,url("../assets/img/desayuno\ saludable.jpg");
     }
 
     .carta:nth-child(3){
@@ -430,11 +434,11 @@ footer .container{
             0deg,
             rgba(0,0,0,0.5)
         )
-        ,url("../assets/img/desayun.jpg")
+        ,url("../assets/img/desayuno.jpg")
 
     }
 
-/*Detalles versión escritorio*/
+/********************************Detalles versión escritorio*******************/
     #detalles .lista{
         display: flex;
         justify-content: center;
@@ -466,7 +470,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../assets/img/detalle1.jpg");
+        ,url("../assets/img/detalles.jpg");
 
     }
 
@@ -477,7 +481,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../assets/img/niños.jpg");
+        ,url("../assets/img/detalle\ niños.jpg");
     }
 
     .carta1:nth-child(3){
@@ -485,7 +489,7 @@ footer .container{
             0deg,
             rgba(0,0,0,0.5)
         )
-        ,url("../assets/img/reg2.jfif")
+        ,url("../assets/img/flores.jpg")
 
     }
 
@@ -532,7 +536,7 @@ footer .container{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../assets/img/art1.jpg");
+    ,url("../assets/img/Articulos.jpg");
 }
 
 .carta2:nth-child(3){
@@ -596,39 +600,51 @@ footer .container{
     #detalles{
         background-position-x: calc(100vw - 800px);
     }
-}
-html, body, #contactanos, #map, #viewDiv {
-   
-    height: 100%;
-    width: 100%;
-  }
-  #contactanos{
-    height: 80%;
-   
-   
-  }
-#map{
-    height: 60%;
-    width:60%;
-    float: left;
-}
-#viewDiv{
-    height: 100%;
-    width:100%;
-    margin: 5%;
-}
 
-
-.media{
-    width: 30%;
-    display: inline-block;
-    overflow: hidden;
+    html, body, #contactanos, #map, #viewDiv {
+    
+        height: 100%;
+        width: 100%;
+    }
+    #contactanos{
+        height: 80%;
     
     
-}
-.media>a{
-    display: block;
-    margin: 5%;
+    }
+    #map{
+        height: 60%;
+        width:60%;
+        float: left;
+    }
+    #viewDiv{
+        height: 100%;
+        width:100%;
+        margin: 5%;
+    }
+
+
+    .media{
+        width: 30%;
+        display: inline-block;
+        overflow: hidden;
+        
+        
+    }
+    .media>a{
+        display: block;
+        margin: 5%;
+
+    }
+    #contactanos{
+        justify-content: center;
+        text-align: center;    
+        padding: 10px;
+        background-size: 30% 10px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    #contactanos{
+        height: 90%;
+    }  
 
 }
-
